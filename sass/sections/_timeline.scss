@@ -1,0 +1,252 @@
+.timeline {
+    overflow: hidden;
+    padding-top: 70px;
+    padding-bottom: 90px;
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.timeline__title {
+    text-align: center;
+    margin-bottom: 70px;
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+        margin-bottom: 50px;
+    }
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+        margin-bottom: 40px;
+    }
+}
+
+.timeline__wrapper {
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+        width: 780px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+}
+
+.timeline-item {
+    width: 50%;
+    padding-bottom: 60px;
+    position: relative;
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+        padding-bottom: 65px;
+
+        span {
+            font-size: 14px;
+        }
+    }
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+        padding-bottom: 40px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        width: 280px;
+    }
+
+    &:last-child {
+        padding-bottom: 0;
+    }
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+    }
+
+    &:before {
+        width: 4px;
+        top: 0;
+        bottom: 0;
+        background-color: #E1EEF4;
+    }
+
+    &:after {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        border: 4px solid #E1EEF4;
+        top: 0;
+        background-color: #fff;
+    }
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.timeline-item:last-child:before {
+    display: none;
+}
+
+// нечетные
+
+.timeline-item:nth-child(odd) {
+    padding-right: 56px;
+    text-align: right;
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+        padding-right: 40px;
+    }
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+        padding-left: 40px;
+        text-align: left;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        padding-right: 0;
+        padding-left: 40px;
+    }
+}
+
+.timeline-item:nth-child(odd):before {
+    right: -2px;
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+        left: 12px;
+    }
+}
+
+.timeline-item:nth-child(odd):after {
+    right: -17px;
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+        left: -3px;
+    }
+}
+
+// четные
+
+.timeline-item:nth-child(even) {
+    margin-left: auto;
+    padding-left: 56px;
+
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+        padding-left: 40px;
+    }
+}
+
+.timeline-item:nth-child(even):before {
+    left: -2px;
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+        left: 12px;
+    }
+}
+
+.timeline-item:nth-child(even):after {
+    left: -17px;
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+        left: -3px;
+    }
+}
+
+.timeline-item__title {
+    margin-bottom: 8px;
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+        margin-bottom: 7px;
+    }
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+        padding-right: 87px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        padding-right: 0;
+    }
+}
+
+.h5 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.3;
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+        font-size: 20px;
+    }
+}
+
+.h5.grad-border {
+    background-position: center bottom 3px;
+    background-size: 100% 6px;
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+        background-position: center bottom 1px;
+    }
+}
+
+.timeline-item p {
+    font-size: 16px;
+    line-height: 1.4;
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+        font-size: 14px;
+    }
+}
+
+.timeline-item>p+p {
+    margin-top: 15px;
+}
+
+.timeline-item span {
+    display: block;
+    margin-top: 8px;
+    font-weight: 600;
+    line-height: 1.3;
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+        margin-top: 10px;
+    }
+}
+
+.timeline-item>span+span {
+    margin-top: 15px;
+}

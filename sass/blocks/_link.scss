@@ -1,0 +1,15 @@
+.link {
+    color: $link-color!important;
+    font-size: 22px;
+    line-height: 1.3; 
+    transition: .3s;
+
+    &:hover, &:active, &:focus {
+        color: $link-active-color!important;
+    }
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+        font-size: 18px;
+    }
+}

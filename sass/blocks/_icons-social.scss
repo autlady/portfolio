@@ -1,0 +1,29 @@
+.icons-social {
+    display: flex;
+    justify-content: flex-start;
+
+    column-gap: 30px;
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+        column-gap: 20px;
+    }
+}
+
+.svg-tg, .svg-wa {
+    width: 48px;
+    height: 48px;
+    transition: .3s;
+
+    &:hover {
+        opacity: 0.75;
+    }
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+a>object{pointer-events: none;}

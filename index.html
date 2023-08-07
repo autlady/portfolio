@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<!-- encoding -->
+	<meta charset="UTF-8" />
+	<!-- Mobile support -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Title and SEO -->
+	<title>Портфолио Юлия Григорьева</title>
+
+	<meta name="description" content="Портфолио Юрий Ключевский" />
+	<meta name="keywords" content="верстка сайтов, адаптивная верстка, оптимизация сайтов" />
+
+	<!-- AOS animation -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="./css/main.css" />
+
+	<!-- Open Graph -->
+	<meta property="og:url" content="https://juliagrigorieva.com" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Портфолио Юлия Григорьева" />
+	<meta property="og:description" content="Профессиональный HTML верстальщик" />
+	<meta property="og:image" content="./img/opengraph.jpg" />
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+	<link rel="manifest" href="./img/favicons/site.webmanifest">
+	<link rel="mask-icon" href="./img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="./img/favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#ffc40d">
+	<meta name="msapplication-config" content="./img/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<header class="header-top">
+		<div class="container">
+			<div class="header-nav">
+				<!-- logo mobile -->
+				<div class="header-logo">HTML Верстальщик</div>
+				<!-- menu-icon-mobile -->
+				<div class="nav-icon" id="nav-icon">
+					<div class="nav-icon__middle"></div>
+				</div>
+				<!-- header-menu -->
+				<nav class="header-menu" id="header-menu">
+					<div class="header-menu__content">
+						<ul class="header-menu__list">
+							<li><a href="#skills" data-aos="zoom-in">Навыки</a></li>
+							<li><a href="#portfolio" data-aos="zoom-in" data-aos-delay="300">Портфолио</a></li>
+							<li><a href="#timeline" data-aos="zoom-in" data-aos-delay="600">Как я работаю</a></li>
+							<li><a href="#contacts" data-aos="zoom-in" data-aos-delay="900">Контакты</a></li>
+						</ul>
+						<div class="header-menu__contacts">
+							<div class="icons-social">
+								<a href="https://t.me/autlady" target="_blank">
+									<svg class="svg-tg">
+										<use href="./img/svgSprite.svg#svg-tg"></use>
+									</svg>
+								</a>
+								<a href="https://wa.me/79219529896" target="_blank">
+									<svg class="svg-wa">
+										<use href="./img/svgSprite.svg#svg-wa"></use>
+									</svg>
+								</a>
+							</div>
+							<div class="header-skills__mail">
+								<a href="mailto:julia_panina@mail.ru" class="link">julia_panina@mail.ru</a>
+							</div>
+						</div>
+					</div>
+				</nav>
+				<div class="header-social">
+					<a href="https://github.com/autlady" target="_blank">
+						<svg class="svg-git">
+							<use href="./img/svgSprite.svg#svg-git"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="header-content">
+		<div class="header-content__wrapper">
+			<div class="container">
+				<div class="header-content__row">
+					<div class="header-content__text" data-aos="fade-right" data-aos-duration="1000">
+						<div class="header-content__title">
+							<h1 class="headline grad-border">Юлия Григорьева</h1>
+						</div>
+						<div class="header-content__desc">
+							<p>
+								Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и
+								выполнением ТЗ.
+							</p>
+						</div>
+						<div class="header-content__buttons">
+							<a href="#skills" class="button">Познакомиться</a>
+							<a href="#contacts" class="button button--light">Контакты</a>
+						</div>
+					</div>
+					<div class="header-content__img" data-aos="fade-left" data-aos-duration="1000">
+						<img src="./img/header-img.jpg" alt="header img">
+					</div>
+					<div class="header-content__desc2">
+						<p>
+							Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и
+							выполнением ТЗ.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-content__banner">
+			<img src="./img/banner.png" alt="banner">
+		</div>
+		<div class="header-skills" id="skills">
+			<div class="container">
+				<div class="header-skills__row">
+					<div class="header-skills__col" data-aos="zoom-in" data-aos-duration="1000">
+						<h3 class="subtitle">Что я умею:</h3>
+						<ul class="header-skills__list">
+							<li>pixel perfect, полное соответствие макету;</li>
+							<li>верстаю с сеткой или без;</li>
+							<li>адаптивная верстка под мобильные устройства;</li>
+							<li>оптимизация по retina экраны;</li>
+							<li>с Bootstrap и без него.</li>
+						</ul>
+					</div>
+					<div class="header-skills__contacts" data-aos="zoom-in" data-aos-duration="2000">
+						<h3 class="subtitle">На связи:</h3>
+						<div class="icons-social">
+							<a href="https://t.me/autlady" target="_blank">
+								<svg class="svg-tg">
+									<use href="./img/svgSprite.svg#svg-tg"></use>
+								</svg>
+							</a>
+							<a href="https://wa.me/79219529896" target="_blank">
+								<svg class="svg-wa">
+									<use href="./img/svgSprite.svg#svg-wa"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="header-skills__mail">
+							<a href="mailto:julia_panina@mail.ru" class="link">julia_panina@mail.ru</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-portfolio" id="portfolio">
+		<div class="container">
+			<div class="section-portfolio__title">
+				<h2 class="title grad-border">Портфолио</h2>
+			</div>
+			<div class="section-portfolio__wrapper">
+				<!-- card -->
+				<a href="http://g92195dg.beget.tech/forest-travel/main.html" target="_blank" class="project-card">
+					<div class="project-card__img">
+						<img src="./img/projects/forest-travel.jpg" alt="forest travel img">
+						<span>Смотреть проект</span>
+					</div>
+					<div class="project-card__text">
+						<h4 class="project-card__title">Верстка “Форест тревел”</h4>
+						<p><strong>Верстка многостраничного сайта</strong></p>
+						<p>Страницы: Главная, Туры и направления, Статья Трекинг - походы, Контакты, 404. <br>Кастомные
+							радиокнопки и чекбоксы. <br>Адаптивная и responsive мобильная верстка.</p>
+					</div>
+				</a>
+				<!-- /card -->
+
+				<!-- card -->
+				<a href="http://g92195dg.beget.tech/unit-project/index.html" target="_blank" class="project-card">
+					<div class="project-card__img">
+						<img src="./img/projects/unit.jpg" alt="unit project img">
+						<span>Смотреть проект</span>
+					</div>
+					<div class="project-card__text">
+						<h4 class="project-card__title">Сайт приложения “Юнит”</h4>
+						<p><strong>Верстка лендинга</strong></p>
+						<p>Интерактивные кнопки поиска и навигации. JQuery плагин OwlСarousel2 для слайдера. Адаптивная
+							мобильная верстка. BEM naming.</p>
+					</div>
+				</a>
+			</div>
+	</section>
+
+	<section class="timeline" id="timeline">
+		<div class="container">
+			<div class="timeline__title">
+				<h2 class="title grad-border">Как я работаю</h2>
+			</div>
+		</div>
+		<div class="timeline__wrapper">
+			<!-- timeline-item -->
+			<div class="timeline-item" data-aos="zoom-out-right" data-aos-duration="1000">
+				<div class="timeline-item__title">
+					<h5 class="h5 grad-border">
+						Оцениваю макет
+					</h5>
+				</div>
+				<p>Оцениваю объем работы, сложность, нюансы. Задаю вопросы.</p>
+				<span>Время: 2 часа</span>
+			</div>
+			<!-- /timeline-item -->
+
+			<!-- timeline-item -->
+			<div class="timeline-item" data-aos="zoom-out-left" data-aos-duration="1000">
+				<div class="timeline-item__title">
+					<h5 class="h5 grad-border">
+						ТЗ, смета и график работ
+					</h5>
+				</div>
+				<p>Согласовываем техническое задание и график работ по проекту. Осмечиваю стоимость по этапам работы.
+				</p>
+				<span>Время: 2 - 4 часа</span>
+			</div>
+			<!-- /timeline-item -->
+
+			<!-- timeline-item -->
+			<div class="timeline-item" data-aos="zoom-out-right" data-aos-duration="1000">
+				<div class="timeline-item__title">
+					<h5 class="h5 grad-border">
+						Вы держите руку на пульсе
+					</h5>
+				</div>
+				<p>Выдаю клиенту доступ к GitHub репозиторию и доске Trello. Вы в любое время можете видеть актуальное
+					состояние проекта и задач.</p>
+			</div>
+			<!-- /timeline-item -->
+
+			<!-- timeline-item -->
+			<div class="timeline-item" data-aos="zoom-out-left" data-aos-duration="1000">
+				<div class="timeline-item__title">
+					<h5 class="h5 grad-border">
+						Выполняю каждый этап
+					</h5>
+				</div>
+				<p>Поочередно выполняю каждый этап работы. Передаю результаты. Заказчик производит поэтапную оплату.</p>
+			</div>
+			<!-- /timeline-item -->
+
+			<!-- timeline-item -->
+			<div class="timeline-item" data-aos="zoom-out-right" data-aos-duration="1000">
+				<div class="timeline-item__title">
+					<h5 class="h5 grad-border">
+						Финальное ревью проекта
+					</h5>
+				</div>
+				<p>Проект готов. Финальное ревью и полировка до идеального состояния. Передаю файлы проекта, заливаю
+					сайт на хостинг заказчика.</p>
+				<span>Время: 2 - 4 часа</span>
+			</div>
+			<!-- /timeline-item -->
+		</div>
+	</section>
+
+	<section class="section-contacts" id="contacts">
+		<div class="container">
+			<div class="section-contacts__title">
+				<h2 class="grad-border title">Контакты</h2>
+			</div>
+			<div class="section-contacts__wrapper">
+				<div class="section-contacts__col">
+					<p>
+						Если вы ищите специалиста по верстке сайтов или frontend разработчика в команду для работы над
+						проектом — напишите мне.
+					</p>
+					<ul class="section-contacts__list">
+						<li>
+							<span>
+								Email
+							</span>
+							<a href="mailto:julia_panina@mail.ru" class="link">julia_panina@mail.ru</a>
+						</li>
+						<!-- <li>
+							<span>
+								Телефон
+							</span>
+							<a href="#" class="link">+7 (921) 952-98-96</a>
+						</li> -->
+					</ul>
+					<div class="icons-social">
+						<a href="https://t.me/autlady" target="_blank">
+							<svg class="svg-tg">
+								<use href="./img/svgSprite.svg#svg-tg"></use>
+							</svg>
+						</a>
+						<a href="https://wa.me/79219529896" target="_blank">
+							<svg class="svg-wa">
+								<use href="./img/svgSprite.svg#svg-wa"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="section-contacts__col">
+					<!-- форма -->
+					<form action="#" class="contact-form">
+						<div class="form-item">
+							<span class="fake-placeholder">Ваш Email</span>
+							<input class="input form-input" name="email" type="email">
+						</div>
+
+						<div class="form-item">
+							<span class="fake-placeholder">Cообщениe</span>
+							<textarea class="textarea form-input" name="message" id="#"></textarea>
+						</div>
+
+						<div class="form-item">
+							<button class="button button--send" type="submit">Отправить</button>
+						</div>
+					</form>
+					<div id="answer"></div>
+
+					<!-- / форма  -->
+
+					<div class="section-contacts__img">
+						<img src="./img/quotes.png" alt="quotes">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__copyright">
+				<div class="copyright">
+					<p>
+						&copy; 2023 — Юлия Григорьева
+					</p>
+				</div>
+				<p>
+					Веб-разработчик из Санкт-Петербурга, занимаюсь версткой и созданием сайтов.
+				</p>
+				<p>
+					Этот сайт сделала в рамках
+					прохождения обучения по верстке на курсах от <a href="https://www.webcademy.ru"
+						target="_blank">WebCademy.ru</a>
+				</p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- backtop -->
+	<a href="#top" class="backtop-btn" id="backtop"> &uarr;</a>
+
+	<!-- jquery-->
+	<script src="./libs/jquery-3.7.0.min.js"></script>
+	<script src="./libs/validator/jquery.validate.min.js"></script>
+
+	<!-- AOS Animation -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+
+	<!-- custom script -->
+	<script src="./js/main.js"></script>
+</body>
+
+</html>
