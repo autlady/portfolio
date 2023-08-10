@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const headerMenu = document.querySelector('#header-menu');
     const navIcon = document.querySelector('#nav-icon');
     const bodyEl = document.body;
+    const menuItems = headerMenu.querySelectorAll('li');
 
     navIcon.addEventListener('click', function () {
-        const menuItems = headerMenu.querySelectorAll('li');
         this.classList.toggle('nav-icon--active');
         headerMenu.classList.toggle('header-menu--active');
         bodyEl.classList.toggle('lock');
@@ -26,6 +26,9 @@ document.addEventListener('DOMContentLoaded', function () {
         this.classList.remove('header-menu--active');
         navIcon.classList.remove('nav-icon--active');
         bodyEl.classList.remove('lock');
+        for (let i = 0; i < menuItems.length; i++) {
+            menuItems[i].classList.remove('li--animate');
+        }
     })
 });
 

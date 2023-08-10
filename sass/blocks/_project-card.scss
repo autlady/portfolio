@@ -35,8 +35,6 @@
 
 .project-card__img {
     position: relative;
-    // width: 100%;
-    // height: 220px;
     overflow: hidden;
 
     &:before {
@@ -76,8 +74,6 @@
     z-index: 99;
 
     display: inline-block;
-    // width: 208px;
-    // height: 51px;
     padding: 14px 20px;
 
     border-radius: 80px;
@@ -232,8 +228,9 @@ button.control-active {
         }
     }
 
-    .project-card__text p {
+    .project-card__subtitle {
         font-size: 20px;
+        font-weight: 700;
 
         /* Tablet Big */
         @media (max-width: 1139px) {
@@ -243,6 +240,21 @@ button.control-active {
         /* Tablet Small */
         @media (max-width: 899px) {
             font-size: 14px;
+        }
+    }
+
+    .project-card__desc {
+        font-size: 16px;
+        line-height: 1.5;
+
+         /* Tablet Big */
+        @media (max-width: 1139px) {
+            font-size: 14px;
+        }
+
+        /* Tablet Small */
+        @media (max-width: 899px) {
+            font-size: 12px;
         }
     }
 }

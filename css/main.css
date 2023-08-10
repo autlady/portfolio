@@ -81,6 +81,10 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+input, textarea, select {
+  box-shadow: 0 0 0px 1000px white inset;
+}
+
 .grad-border {
   display: inline;
   background-repeat: no-repeat;
@@ -1777,22 +1781,42 @@ button.control-active {
     font-size: 18px;
   }
 }
-.project-card:first-child .project-card__text p,
-.project-card:nth-child(2) .project-card__text p {
+.project-card:first-child .project-card__subtitle,
+.project-card:nth-child(2) .project-card__subtitle {
   font-size: 20px;
+  font-weight: 700;
   /* Tablet Big */
   /* Tablet Small */
 }
 @media (max-width: 1139px) {
-  .project-card:first-child .project-card__text p,
-  .project-card:nth-child(2) .project-card__text p {
+  .project-card:first-child .project-card__subtitle,
+  .project-card:nth-child(2) .project-card__subtitle {
     font-size: 16px;
   }
 }
 @media (max-width: 899px) {
-  .project-card:first-child .project-card__text p,
-  .project-card:nth-child(2) .project-card__text p {
+  .project-card:first-child .project-card__subtitle,
+  .project-card:nth-child(2) .project-card__subtitle {
     font-size: 14px;
+  }
+}
+.project-card:first-child .project-card__desc,
+.project-card:nth-child(2) .project-card__desc {
+  font-size: 16px;
+  line-height: 1.5;
+  /* Tablet Big */
+  /* Tablet Small */
+}
+@media (max-width: 1139px) {
+  .project-card:first-child .project-card__desc,
+  .project-card:nth-child(2) .project-card__desc {
+    font-size: 14px;
+  }
+}
+@media (max-width: 899px) {
+  .project-card:first-child .project-card__desc,
+  .project-card:nth-child(2) .project-card__desc {
+    font-size: 12px;
   }
 }
 
@@ -1855,6 +1879,7 @@ button.control-active {
   width: 440px;
   border-bottom: #E5E5E5 2px solid;
   color: #000;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.3;
